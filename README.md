@@ -15,7 +15,7 @@
 
 ---
 
-## 🖼️ Preview do Dashboard
+##  Preview do Dashboard
 
 <p align="center">
   <img src="dashboard_vendas.png" alt="Dashboard Completo de Vendas" width="900" />
@@ -23,20 +23,20 @@
 
 ---
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
-- **🧹 Tratamento e Engenharia de Dados (`pandas_dashboard.py`)**:
+- ** Tratamento e Engenharia de Dados (`pandas_dashboard.py`)**:
   - Remoção de duplicatas e imputação de valores ausentes (`NaN`) pela mediana.
   - Criação de variáveis (`valor_bruto`, `valor_liquido`, `porte`, `mes`, `ano`).
-- **🏆 Segmentação RFM de Clientes**:
+- ** Segmentação RFM de Clientes**:
   - Cálculo de **R**ecência (dias desde a última compra), **F**requência (total de compras) e valor **M**onetário (total gasto).
   - Classificação automática em `Cliente VIP`, `Potencial Lealdade` e `Regular / Em Risco`.
-- **🤖 Machine Learning (`Scikit-Learn`)**:
+- ** Machine Learning (`Scikit-Learn`)**:
   - Modelo de **Regressão Linear** para análise de tendência diária e previsão de faturamento futuro.
-- **🔥 Análise Estatística & Gráficos 2D/3D (`pandas_graficos.py` & `graficos_matplotlib.py`)**:
+- ** Análise Estatística & Gráficos 2D/3D (`pandas_graficos.py` & `graficos_matplotlib.py`)**:
   - Mapa de Calor de Correlação (*Heatmap*) e análise de *Outliers* com *Boxplot*.
   - Visualização espacial em **3D** cruzando Quantidade, Preço Unitário e Avaliação.
-- **🌐 Web App Interativo (`app_streamlit.py`)**:
+- ** Web App Interativo (`app_streamlit.py`)**:
   - Aplicação web em **Streamlit** com filtros dinâmicos por cidade e categoria, KPIs em tempo real, cubo 3D interativo em **Plotly** e simulador de previsão de vendas.
 
 ---
