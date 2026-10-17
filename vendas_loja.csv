@@ -1,0 +1,26 @@
+id_venda,data,cliente,cidade,produto,categoria,quantidade,preco_unitario,desconto,metodo_pagamento,avaliacao
+1001,2026-01-05,Ana Silva,São Paulo,Notebook Pro,Eletrônicos,1,4500.00,0.05,Cartão de Crédito,5.0
+1002,2026-01-06,Bruno Costa,Rio de Janeiro,Mouse Sem Fio,Acessórios,2,120.50,0.00,PIX,4.5
+1003,2026-01-07,Carla Dias,Belo Horizonte,Teclado Mecânico,Acessórios,1,350.00,0.10,Boleto,4.0
+1004,2026-01-08,Daniel Souza,São Paulo,Monitor 27 pol,Eletrônicos,2,1800.00,0.05,Cartão de Crédito,5.0
+1005,2026-01-10,Eduarda Lima,Curitiba,Cadeira Gamer,Móveis,1,1200.00,0.15,PIX,
+1006,2026-01-11,Felipe Rocha,Porto Alegre,Headset Bluetooth,Acessórios,3,250.00,0.00,Cartão de Débito,3.5
+1007,2026-01-12,Gabriela Alves,São Paulo,Smartphone X,Eletrônicos,1,3200.00,0.05,Cartão de Crédito,4.8
+1008,2026-01-14,Henrique Martins,Recife,Mesa de Escritório,Móveis,1,850.00,0.10,Boleto,4.2
+1009,2026-01-15,Isabela Ferreira,Rio de Janeiro,Webcam HD,Acessórios,2,180.00,0.00,PIX,
+1010,2026-01-15,Isabela Ferreira,Rio de Janeiro,Webcam HD,Acessórios,2,180.00,0.00,PIX,
+1011,2026-01-17,João Pereira,Salvador,Notebook Pro,Eletrônicos,1,4500.00,0.10,PIX,5.0
+1012,2026-01-18,Karina Gomes,Belo Horizonte,Mousepad Gamer,Acessórios,4,45.00,0.00,Cartão de Débito,4.7
+1013,2026-01-20,Lucas Ribeiro,Curitiba,Monitor 27 pol,Eletrônicos,1,1800.00,0.00,Cartão de Crédito,4.5
+1014,2026-01-22,Mariana Cardoso,São Paulo,Cadeira Ergonômica,Móveis,2,1500.00,0.20,Boleto,4.9
+1015,2026-01-25,Nicolas Barros,Brasília,Teclado Mecânico,Acessórios,1,350.00,0.05,PIX,3.8
+1016,2026-02-01,Olivia Mendes,São Paulo,SSD 1TB,Hardware,2,480.00,0.05,PIX,4.9
+1017,2026-02-03,Paulo Castro,Rio de Janeiro,Memória RAM 16GB,Hardware,4,220.00,0.10,Cartão de Crédito,4.6
+1018,2026-02-05,Rafael Teixeira,Porto Alegre,Smartphone X,Eletrônicos,1,3200.00,0.00,Cartão de Crédito,
+1019,2026-02-08,Sofia Correia,Curitiba,Headset Bluetooth,Acessórios,1,250.00,0.00,PIX,4.1
+1020,2026-02-10,Thiago Araujo,Belo Horizonte,Placa de Vídeo,Hardware,1,2900.00,0.15,PIX,5.0
+1021,2026-02-12,Ana Silva,São Paulo,Suporte para Monitor,Acessórios,2,95.00,0.00,Cartão de Débito,4.3
+1022,2026-02-14,Bruno Costa,Rio de Janeiro,Cadeira Gamer,Móveis,1,1200.00,0.05,Cartão de Crédito,4.0
+1023,2026-02-18,Daniel Souza,São Paulo,SSD 1TB,Hardware,1,480.00,0.00,Boleto,
+1024,2026-02-20,Carla Dias,Belo Horizonte,Notebook Pro,Eletrônicos,1,4500.00,0.05,Cartão de Crédito,4.9
+1025,2026-02-25,Lucas Ribeiro,Curitiba,Mouse Sem Fio,Acessórios,3,120.50,0.05,PIX,4.4
