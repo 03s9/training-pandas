@@ -6,10 +6,12 @@
   <img alt="Scikit-Learn" src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
   <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white" />
   <img alt="Plotly" src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" />
+  <img alt="NumPy" src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
   <img alt="Seaborn" src="https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge" />
+  <img alt="Matplotlib" src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge" />
 </p>
 
-> Projeto completo de Análise de Dados e Data Science em Python utilizando **Pandas**, **Scikit-Learn**, **Streamlit**, **Plotly**, **Seaborn** e **Matplotlib** para limpeza de dados, análise estatística, segmentação de clientes (RFM), regressão linear e visualização interativa em 2D e 3D.
+> Projeto completo de Análise de Dados e Data Science em Python utilizando **Pandas**, **NumPy**, **Scikit-Learn**, **Streamlit**, **Plotly**, **Seaborn** e **Matplotlib** para limpeza de dados, análise estatística, segmentação de clientes (RFM), regressão linear e visualização interativa em 2D e 3D.
 
 ---
 
@@ -55,6 +57,9 @@
 
 ## 📦 Instalação
 
+Clone o repositório e instale as dependências:
+
+```sh
 ```sh
 git clone git@github.com:03s9/training-pandas.git
 cd training-pandas
