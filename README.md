@@ -1,7 +1,9 @@
-<h1 align="center">📊 Pandas Sales Analytics, RFM & ML Dashboard</h1>
+<h1 align="center">Training Pandas · Inteligência de Vendas</h1>
 
 <p align="center">
-  <img alt="Python" src="https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img alt="React" src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-0.161-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
   <img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
   <img alt="Scikit-Learn" src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
   <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white" />
@@ -12,6 +14,8 @@
 </p>
 
 > Análise de vendas com **Pandas**, **scikit-learn** e **FastAPI**; site em **React** com indicadores gerenciais, segmentação RFM, regressão e visualização 3D. O aplicativo Streamlit anterior continua disponível.
+
+**Guias:** [instalação](docs/getting-started.md) · [CSV](docs/csv-schema.md) · [dashboard](docs/dashboard-guide.md) · [análises](docs/advanced-analysis.md) · [API](docs/api.md) · [arquitetura](docs/architecture.md) · [design](docs/design-system.md) · [testes](docs/testing.md) · [operação](docs/operations.md) · [problemas comuns](docs/troubleshooting.md).
 
 ---
 
