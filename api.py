@@ -144,7 +144,7 @@ def advanced(
             "status": "ok", "columns": cols,
             "matrix": corr.astype(object).where(pd.notna(corr), None).values.tolist(),
             "points": [{"category": row.categoria, "value": float(row.valor_liquido)}
-                       for row in df.itertuples()],
+                       for row in df.groupby("categoria", as_index=False)["valor_liquido"].mean().itertuples()],
         }
     if analysis == "3d":
         points = df.iloc[:1000]

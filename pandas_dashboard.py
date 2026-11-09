@@ -16,11 +16,14 @@ def carregar_dados(caminho_csv: Union[str, BinaryIO] = 'vendas_loja.csv') -> pd.
     df['data'] = pd.to_datetime(df['data'], errors='raise')
     for coluna in ('quantidade', 'preco_unitario', 'desconto', 'avaliacao'):
         df[coluna] = pd.to_numeric(df[coluna], errors='raise')
-    if (df['quantidade'].le(0).any() or df['preco_unitario'].lt(0).any()
+    if (df[['quantidade', 'preco_unitario', 'desconto']].isna().any().any()
+            or df['quantidade'].le(0).any() or df['quantidade'].mod(1).ne(0).any()
+            or df['preco_unitario'].lt(0).any()
             or df['desconto'].lt(0).any() or df['desconto'].gt(1).any()
-            or df['avaliacao'].dropna().lt(0).any() or df['avaliacao'].dropna().gt(5).any()):
+            or df['avaliacao'].isna().all() or df['avaliacao'].dropna().lt(0).any()
+            or df['avaliacao'].dropna().gt(5).any()):
         raise ValueError('Quantidade, preço, desconto ou avaliação fora do intervalo permitido.')
-    if df[['id_venda', 'data', 'cliente', 'cidade', 'produto', 'categoria']].isna().any().any():
+    if df[['id_venda', 'data', 'cliente', 'cidade', 'produto', 'categoria', 'metodo_pagamento']].isna().any().any():
         raise ValueError('Há campos obrigatórios vazios no CSV.')
     df = df.drop_duplicates(subset=['data', 'cliente', 'produto', 'quantidade'], keep='first').copy()
     df['avaliacao'] = df['avaliacao'].fillna(df['avaliacao'].median())
