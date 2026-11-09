@@ -1,0 +1,1 @@
+- 2026-11-08 | data-source | O CSV real entra por upload Streamlit e é validado em carregar_dados; vendas_loja.csv continua somente como demonstração, sem persistir uploads.

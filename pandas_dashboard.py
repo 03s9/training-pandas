@@ -1,10 +1,27 @@
 import pandas as pd
 import numpy as np
+from typing import BinaryIO, Union
 from sklearn.linear_model import LinearRegression
 
 
-def carregar_dados(caminho_csv: str = 'vendas_loja.csv') -> pd.DataFrame:
-    df = pd.read_csv(caminho_csv, parse_dates=['data'])
+def carregar_dados(caminho_csv: Union[str, BinaryIO] = 'vendas_loja.csv') -> pd.DataFrame:
+    df = pd.read_csv(caminho_csv)
+    obrigatorias = {'id_venda', 'data', 'cliente', 'cidade', 'produto', 'categoria',
+                    'quantidade', 'preco_unitario', 'desconto', 'metodo_pagamento', 'avaliacao'}
+    faltantes = obrigatorias - set(df.columns)
+    if faltantes:
+        raise ValueError(f"Colunas ausentes: {', '.join(sorted(faltantes))}")
+    if df.empty:
+        raise ValueError('O CSV não contém vendas.')
+    df['data'] = pd.to_datetime(df['data'], errors='raise')
+    for coluna in ('quantidade', 'preco_unitario', 'desconto', 'avaliacao'):
+        df[coluna] = pd.to_numeric(df[coluna], errors='raise')
+    if (df['quantidade'].le(0).any() or df['preco_unitario'].lt(0).any()
+            or df['desconto'].lt(0).any() or df['desconto'].gt(1).any()
+            or df['avaliacao'].dropna().lt(0).any() or df['avaliacao'].dropna().gt(5).any()):
+        raise ValueError('Quantidade, preço, desconto ou avaliação fora do intervalo permitido.')
+    if df[['id_venda', 'data', 'cliente', 'cidade', 'produto', 'categoria']].isna().any().any():
+        raise ValueError('Há campos obrigatórios vazios no CSV.')
     df = df.drop_duplicates(subset=['data', 'cliente', 'produto', 'quantidade'], keep='first').copy()
     df['avaliacao'] = df['avaliacao'].fillna(df['avaliacao'].median())
 

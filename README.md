@@ -37,7 +37,10 @@
   - Mapa de Calor de Correlação (*Heatmap*) e análise de *Outliers* com *Boxplot*.
   - Visualização espacial em **3D** cruzando Quantidade, Preço Unitário e Avaliação.
 - ** Web App Interativo (`app_streamlit.py`)**:
-  - Aplicação web em **Streamlit** com filtros dinâmicos por cidade e categoria, KPIs em tempo real, cubo 3D interativo em **Plotly** e simulador de previsão de vendas.
+  - Visão gerencial com filtros por período, cidade e categoria, KPIs e gráficos interativos. RFM, regressão e 3D ficam em **Análises avançadas**.
+  - Upload de CSV real na barra lateral. Sem upload, o app usa `vendas_loja.csv` como demonstração; o arquivo enviado não é gravado no repositório.
+
+O CSV enviado deve conter as colunas `id_venda`, `data` (data reconhecida pelo pandas), `cliente`, `cidade`, `produto`, `categoria`, `quantidade`, `preco_unitario`, `desconto` (entre 0 e 1), `metodo_pagamento` e `avaliacao` (0 a 5). Use `vendas_loja.csv` como exemplo de formato.
 
 ---
 
