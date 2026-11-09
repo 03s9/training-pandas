@@ -3,6 +3,7 @@ __pycache__/
 .venv/
 web/node_modules/
 web/dist/
+web/*.tsbuildinfo
 *.pyc
 
 # REDACTED_SECURITY_BLOCK (Zero Dados Sensiveis no Git/GitHub)
