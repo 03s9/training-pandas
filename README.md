@@ -11,11 +11,11 @@
   <img alt="Matplotlib" src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge" />
 </p>
 
-> Projeto completo de Análise de Dados e Data Science em Python utilizando **Pandas**, **NumPy**, **Scikit-Learn**, **Streamlit**, **Plotly**, **Seaborn** e **Matplotlib** para limpeza de dados, análise estatística, segmentação de clientes (RFM), regressão linear e visualização interativa em 2D e 3D.
+> Análise de vendas com **Pandas**, **scikit-learn** e **FastAPI**; site em **React** com indicadores gerenciais, segmentação RFM, regressão e visualização 3D. O aplicativo Streamlit anterior continua disponível.
 
 ---
 
-##  Preview do Dashboard
+##  Preview do aplicativo Streamlit anterior
 
 <p align="center">
   <img src="dashboard_vendas.png" alt="Dashboard Completo de Vendas" width="900" />
@@ -48,6 +48,8 @@ O CSV enviado deve conter as colunas `id_venda`, `data` (data reconhecida pelo p
 
 ```text
 ├── app_streamlit.py         # Dashboard Web Interativo (Streamlit + Plotly 3D)
+├── api.py                   # API FastAPI do novo site
+├── web/                     # Landing e dashboard React
 ├── pandas_dashboard.py      # Pipeline de dados, RFM e Regressão Linear (Scikit-Learn)
 ├── pandas_graficos.py       # Painel com 6 gráficos (Seaborn/Matplotlib)
 ├── graficos_matplotlib.py   # Gráfico de dispersão 3D interativo (Matplotlib)
@@ -60,20 +62,34 @@ O CSV enviado deve conter as colunas `id_venda`, `data` (data reconhecida pelo p
 
 ## 📦 Instalação
 
-Clone o repositório e instale as dependências:
+Novo site: Python 3.12, Node.js 20.19+ e npm. Em dois terminais:
 
 ```sh
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements-api.txt
+.venv/bin/python -m uvicorn api:app --reload
+```
+
 ```sh
-git clone git@github.com:03s9/training-pandas.git
-cd training-pandas
-pip install -r requirements.txt
+cd web
+npm install
+npm run dev
+```
+
+Abra `http://127.0.0.1:5173`. O site mostra a base de demonstração até você enviar um CSV real no dashboard. O upload fica em memória por uma hora; não é gravado no disco. O arquivo deve seguir as colunas descritas acima, com até 10 MB e 10 mil vendas.
+
+Testes e build:
+
+```sh
+.venv/bin/python -m pytest -q
+cd web && npm run build
 ```
 
 ---
 
 ## 💻 Como Executar
 
-**1. Abrir o Dashboard Web Interativo no navegador (Streamlit):**
+**Aplicativo Streamlit anterior (opcional):**
 ```sh
 python3 -m streamlit run app_streamlit.py
 ```

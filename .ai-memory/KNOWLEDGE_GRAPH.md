@@ -1,1 +1,2 @@
 - 2026-11-08 | data-source | O CSV real entra por upload Streamlit e é validado em carregar_dados; vendas_loja.csv continua somente como demonstração, sem persistir uploads.
+- 2026-11-08 | architecture | Novo site usa Vite/React + FastAPI em Python 3.12; uploads ficam em memória por até 1 hora e filtros são processados no servidor.

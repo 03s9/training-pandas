@@ -1,9 +1,9 @@
 # REPO_MAP.md — Mapa Neural de Símbolos e Conexões
 
-> Atualizado em: `2026-11-08 22:45:56`
+> Atualizado em: `2026-11-08 22:49:53`
 > **Instrução para IAs (Antigravity, Cursor, Codex)**: Use os intervalos `[L<inicio>-L<fim>]` abaixo para ler apenas as linhas necessárias (`StartLine`/`EndLine`). Nunca leia arquivos inteiros grandes sem consultar este mapa.
 
-**Resumo do Grafo**: `13` arquivos indexados | `45` símbolos mapeados.
+**Resumo do Grafo**: `14` arquivos indexados | `45` símbolos mapeados.
 
 ### `api.py` (Python, 154 lines)
   - `def get_dataset()` [L28-L35]
@@ -20,10 +20,10 @@
 ### `graficos_matplotlib.py` (Python, 25 lines)
   - *(no top-level symbols extracted)*
 
-### `pandas_dashboard.py` (Python, 85 lines)
-  - `def carregar_dados()` [L7-L37]
-  - `def calcular_rfm()` [L40-L54]
-  - `def treinar_regressao_faturamento()` [L57-L68]
+### `pandas_dashboard.py` (Python, 88 lines)
+  - `def carregar_dados()` [L7-L40]
+  - `def calcular_rfm()` [L43-L57]
+  - `def treinar_regressao_faturamento()` [L60-L71]
 
 ### `pandas_graficos.py` (Python, 51 lines)
   - *(no top-level symbols extracted)*
@@ -78,4 +78,7 @@
   - `function Plot3D` [L5]
 
 ### `web/src/main.tsx` (React/TSX, 9 lines)
+  - *(no top-level symbols extracted)*
+
+### `web/src/plotly.d.ts` (TypeScript, 4 lines)
   - *(no top-level symbols extracted)*

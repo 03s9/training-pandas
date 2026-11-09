@@ -1,9 +1,9 @@
 # Handoff
-- Active Goal: Dashboard gerencial de vendas em Streamlit com upload de CSV real e análises avançadas separadas.
-- Branch: feat/gestor-dashboard (local; sem push).
-- Touched Files: app_streamlit.py:1-166; pandas_dashboard.py:1-38; tests/test_dashboard_data.py:1-28; README.md:30-35.
-- Memory: .ai-memory/REPO_MAP.md e KNOWLEDGE_GRAPH.md atualizados.
-- Test/Build Status: unittest (3 testes) PASS; AppTest visão geral e 4 análises PASS; 2 testes legados executados PASS; py_compile e git diff --check PASS.
-- Limitation: pytest não instalado no Python 3.9 com dependências; servidor Streamlit não pôde abrir porta no sandbox, logo sem revisão visual em navegador.
-- Next Exact Action: receber CSV real do usuário para validar esquema e comportamento em volume real.
-- Next Exact Action: revisar interface em navegador com servidor local fora do sandbox, se disponível.
+- Active Goal: substituir a UI principal por landing de portfólio e dashboard React, com FastAPI em Python 3.12.
+- Branch: feat/gestor-dashboard; commits locais 7ece23b (API) e 23898b9 (validação).
+- Touched Files: api.py, pandas_dashboard.py, requirements-api.txt, tests/test_api.py, web/src/, web/package.json, README.md.
+- Test/Build Status: 8 testes Python PASS; API demo/upload/filtros/4 análises PASS; TSX parse PASS.
+- Blocker: terminal sem DNS para registry.npmjs.org; Recharts, Plotly JS e outros pacotes npm ausentes do cache; npm install/build e revisão visual pendentes.
+- Next Exact Action: quando houver rede, executar cd web && npm install && npm run build.
+- Next Exact Action: iniciar .venv/bin/python -m uvicorn api:app --reload e npm run dev; revisar em 375/768/1440 px e fluxos de upload, filtros e análises.
+- Next Exact Action: corrigir falhas observadas, atualizar testes/documentação e fazer commit local; não fazer push sem ordem.
